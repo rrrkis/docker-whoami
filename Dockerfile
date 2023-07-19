@@ -1,4 +1,4 @@
-FROM golang:alpine3.6 AS binary
+FROM golang:alpine3.10 AS binary
 ADD . /app
 WORKDIR /app
 RUN go build -o http
